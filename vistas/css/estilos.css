@@ -1,0 +1,198 @@
+:root {
+    /*#D8D9DE
+    #4A4B56 
+    #FAFAFB
+    #D9DFF4
+    #97959E
+    #7785ED
+    #E9A27B
+    #4AC8F9*/
+    
+    --colorCeleste: #4AC8F9;
+    --colorMorado: #7785ED;
+    --colorNaranja: #E9A27B;
+    --colorPlomoOscuro: #4A4B56;
+    --colorPlomoMedio: #97959E;
+    --colorPlomoClaro: #D8D9DE;
+    --colorGris: #D9DFF4;
+    --colorBlanco: #FAFAFB;
+    --colorSubMenu: #5c5d67;
+    --colorFondo: linear-gradient(to right, #7785ed, #5c99f7, #45aafc, #3dbafc, #4ac8f9);
+    --colorLinea: linear-gradient(to right, #7785ed, #7785ed, #7785ed, #7785ed, #7785ed, #6e8cf1, #6593f4, #5c99f7, #4aa6fb, #3fb2fc, #3fbefb, #4ac8f9);
+}
+
+/*============================
+    GENERALES
+============================*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+
+/*============================
+    CABEZOTE
+============================*/
+.cabezote {
+    background-image: var(--colorFondo);  
+    position: fixed;
+    width: 100%;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.logo {
+    display: none;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.nav-bar-derecha ul li a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar-derecha img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.salir {
+    display: none;
+}
+
+/*=================
+MENU
+==================*/
+.contenedor-nav {
+    background: #4A4B56;
+    width: 100%;
+    /*height: 100vh;*/
+}
+.contenedor-nav .menu {
+    display: none;
+}
+.contenedor-nav ul {
+    text-align: center;
+}
+.contenedor-nav .menu .activado > a {
+    color: var(--colorNaranja);
+}
+.contenedor-nav .menu .activado {
+    border-right: 4px solid var(--colorNaranja);
+}
+.contenedor-nav .menu li a {
+    display: block;
+    padding: 15px;
+    transition: background-color .5s ease;
+}
+.contenedor-nav .menu li i {
+    margin-right: 5px;
+    font-size: 12px;
+}
+.contenedor-nav .menu li .derecha {
+    float: right;
+    transition: transform .5s ease;
+}
+.contenedor-nav .menu li.activado .derecha {
+    transform: rotate(90deg);
+    transition: transform .5s ease;
+}
+.contenedor-nav .menu li a {
+    transition: color .5s ease;
+}
+.contenedor-nav .menu li a:hover {
+    color: var(--colorNaranja);
+}
+
+.contenedor-nav .menu li .sub-menu {
+    background-color: var(--colorSubMenu);
+    display: none;
+    text-align: left;
+}
+.contenedor-nav .menu li .sub-menu li a:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    color: #fff;
+    display: inline;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.colores {
+    width: 800px;
+    height: 40px;
+}
+
+.color1 {
+    background-color: var(--colorCeleste);
+}
+.color2 {
+    background-color: var(--colorMorado);
+}
+.color3 {
+    background-color: var(--colorNaranja);
+}
+.color4 {
+    background-color: var(--colorPlomoOscuro);
+}
+.color5 {
+    background-color: var(--colorPlomoMedio);
+}
+.color6 {
+    background-color: var(--colorPlomoClaro);
+}
+.color7 {
+    background-color: var(--colorGris);
+}
+.color8 {
+    background-color: var(--colorBlanco);
+}
+.color9 {
+    background-image: var(--colorFondo);
+}
+.color10 {
+    background-image: var(--colorLinea);
+}
+.color11 {
+    background-color: #4a4b08;
+}
+.color12 {
+    
+    background-color: rgba(74, 75, 86, .9);
+}
