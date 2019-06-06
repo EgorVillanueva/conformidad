@@ -51,9 +51,7 @@ ul {
     CABEZOTE
 ============================*/
 .cabezote {
-    background-image: var(--colorFondo);  
-    position: fixed;
-    width: 100%;
+    background-image: var(--colorFondo);
 }
 .fixed {
     position: fixed;
